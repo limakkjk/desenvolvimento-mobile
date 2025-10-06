@@ -1,0 +1,85 @@
+[gd_scene load_steps=12 format=3 uid="uid://chjnkvdq3kuia"]
+
+[ext_resource type="Script" uid="uid://c3q70i0yce5b4" path="res://Atividade 22/node_2d.gd" id="1_4qqy0"]
+[ext_resource type="Texture2D" uid="uid://0xr2afnytwjv" path="res://Atividade 22/Run.png" id="1_o7oaa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdyvu"]
+atlas = ExtResource("1_o7oaa")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rh54t"]
+atlas = ExtResource("1_o7oaa")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g6lag"]
+atlas = ExtResource("1_o7oaa")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ju0gr"]
+atlas = ExtResource("1_o7oaa")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a2wl4"]
+atlas = ExtResource("1_o7oaa")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwsa2"]
+atlas = ExtResource("1_o7oaa")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcyn5"]
+atlas = ExtResource("1_o7oaa")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rsup1"]
+atlas = ExtResource("1_o7oaa")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7qpob"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cdyvu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rh54t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g6lag")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ju0gr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a2wl4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hwsa2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fcyn5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rsup1")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_4qqy0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(385, 213)
+sprite_frames = SubResource("SpriteFrames_7qpob")
+animation = &"new_animation"
+frame = 3
+frame_progress = 0.99633
+
+[node name="BotaoAnimacao" type="Button" parent="."]
+offset_left = 63.0
+offset_top = 54.0
+offset_right = 277.0
+offset_bottom = 193.0
+text = "BotaoAnimacao"
