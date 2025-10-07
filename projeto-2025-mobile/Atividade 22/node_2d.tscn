@@ -63,7 +63,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_rsup1")
 }],
 "loop": true,
-"name": &"new_animation",
+"name": &"run",
 "speed": 5.0
 }]
 
@@ -73,9 +73,9 @@ script = ExtResource("1_4qqy0")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(385, 213)
 sprite_frames = SubResource("SpriteFrames_7qpob")
-animation = &"new_animation"
-frame = 3
-frame_progress = 0.99633
+animation = &"run"
+frame_progress = 0.836143
+speed_scale = 3.0
 
 [node name="BotaoAnimacao" type="Button" parent="."]
 offset_left = 63.0
