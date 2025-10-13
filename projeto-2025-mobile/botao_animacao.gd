@@ -19,7 +19,7 @@ func _toggle_animation():
 	is_playing = false
 	button.text = "Iniciar"
 	
-else:
+	else:
 	sprite.play("run")
 	is_playing = true
 	button.text = "Parar"
