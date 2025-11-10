@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cmxe5g0uyeth8"
+path="res://.godot/imported/EndSound.wav-fe808d6b00be5cdd323282e9661dbc1f.sample"
+
+[deps]
+
+source_file="res://Atividade 25 - coin dash/assets1/audio/EndSound.wav"
+dest_files=["res://.godot/imported/EndSound.wav-fe808d6b00be5cdd323282e9661dbc1f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
