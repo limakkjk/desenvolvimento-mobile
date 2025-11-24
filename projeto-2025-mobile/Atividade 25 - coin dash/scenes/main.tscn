@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://cfs8yxa7t0si8"]
+
+[ext_resource type="Script" uid="uid://d264pwv4lirb8" path="res://Atividade 25 - coin dash/scenes/main.gd" id="1_il6yj"]
+[ext_resource type="PackedScene" uid="uid://c2ca7ttf6j8mh" path="res://Atividade 25 - coin dash/scenes/coin.tscn" id="2_2e33k"]
+[ext_resource type="Texture2D" uid="uid://mxuym2bs58dp" path="res://Atividade 25 - coin dash/assets1/grass.png" id="3_7jiei"]
+[ext_resource type="PackedScene" uid="uid://lhn1n63a673" path="res://Atividade 25 - coin dash/scenes/player.tscn" id="4_kordq"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_il6yj")
+coin_scene = ExtResource("2_2e33k")
+
+[node name="background" type="TextureRect" parent="."]
+texture_filter = 2
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_7jiei")
+stretch_mode = 1
+
+[node name="GameTimer" type="Timer" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("4_kordq")]

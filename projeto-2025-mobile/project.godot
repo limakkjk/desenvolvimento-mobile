@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Projeto 2025 Mobile"
-run/main_scene="res://Atividade2/node_2d.tscn"
+run/main_scene="uid://cfs8yxa7t0si8"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 

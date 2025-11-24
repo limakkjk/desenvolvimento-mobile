@@ -72,6 +72,7 @@ animations = [{
 size = Vector2(77, 88)
 
 [node name="Player" type="Area2D"]
+position = Vector2(0, -1)
 script = ExtResource("1_s1srs")
 metadata/_edit_group_ = true
 
@@ -86,3 +87,5 @@ speed_scale = 2.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-7.5, 22)
 shape = SubResource("RectangleShape2D_bfmig")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
