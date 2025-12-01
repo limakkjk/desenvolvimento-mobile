@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://dt6awqu4tm3q2"]
+
+[ext_resource type="Texture2D" uid="uid://b6ra42cdhodhi" path="res://Atividade 24/Assets_texture_shadow/Snow_ruins4.png" id="1_jlyi1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5u4v"]
+atlas = ExtResource("1_jlyi1")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kly08"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5u4v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jlyi1"]
+size = Vector2(109, 136)
+
+[node name="Node2D" type="StaticBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_kly08")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3.5, -4)
+shape = SubResource("RectangleShape2D_jlyi1")
